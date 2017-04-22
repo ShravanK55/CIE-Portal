@@ -5,7 +5,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/homePageLayout"
-    android:background="@drawable/trial_bg">
+    android:background="@drawable/student_bg">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -23,8 +23,8 @@
             android:fontFamily="sans-serif"
             android:textStyle="normal|bold"
             android:layout_gravity="center_horizontal"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp" />
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
     </FrameLayout>
 
     <LinearLayout
@@ -182,7 +182,8 @@
         android:scaleType="centerInside"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -196,7 +197,8 @@
         android:scaleType="centerInside"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -210,6 +212,7 @@
         android:scaleType="centerInside"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
 </LinearLayout>

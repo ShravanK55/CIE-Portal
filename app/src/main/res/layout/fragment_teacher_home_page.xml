@@ -3,19 +3,27 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/teacherHomePageLayout"
-    android:background="@color/studentBackground">
+    android:background="@drawable/teacher_bg">
 
-    <TextView
-        android:text="CIE/SEE Teacher Portal"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/teacherPortalTitle"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/studPortalTextColor"
-        android:textSize="26sp"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal|bold"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/tTitleContainer"
+        android:background="#1Affffff">
+
+        <TextView
+            android:text="CIE/SEE Teacher Portal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherPortalTitle"
+            android:textColor="@color/studPortalTextColor"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+    </FrameLayout>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -23,7 +31,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:id="@+id/teacherWelcomeLayout"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="15dp">
 
         <TextView
             android:text="Welcome,"
@@ -40,7 +48,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/teacherNameText"
             android:textSize="22sp"
-            android:textColor="@color/studPortalTextHighlight" />
+            android:textColor="@color/teacherPortalTextHighlight" />
 
         <TextView
             android:text="."
@@ -75,7 +83,8 @@
         android:scaleType="centerInside"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -89,7 +98,8 @@
         android:scaleType="centerInside"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -103,6 +113,7 @@
         android:scaleType="centerInside"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
 </LinearLayout>

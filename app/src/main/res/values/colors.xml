@@ -9,7 +9,9 @@
     <color name="toolbarBackground">#0a0a0a</color>
     <color name="transparentBg">#00000000</color>
     <color name="highlightedBg">#af32ae9e</color>
+    <color name="teacherHighlightedBg">#afae323a</color>
     <color name="studPortalTextColor">#d7d7d7</color>
     <color name="studPortalTextHighlight">#3dd4c1</color>
+    <color name="teacherPortalTextHighlight">#a62529</color>
     <color name="passwordChangeColor">#7e7e7e</color>
 </resources>

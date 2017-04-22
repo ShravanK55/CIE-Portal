@@ -6,26 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/teacherMarksLayout"
-    android:background="@color/studentBackground">
+    android:background="@drawable/teacher_bg">
 
-    <TextView
-        android:text="CIE Marks Upload"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/teacherMarksTitle"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/studPortalTextColor"
-        android:textSize="26sp"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal|bold"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/tMarksTitleContainer"
+        android:background="#1Affffff">
+
+        <TextView
+            android:text="CIE Marks Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherMarksTitle"
+            android:textColor="@color/studPortalTextColor"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+    </FrameLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/selectClassContainer"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="15dp">
 
         <TextView
             android:text="Class:"
@@ -92,7 +100,7 @@
         android:id="@+id/teacherTestText"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:textColor="@color/studPortalTextHighlight"
+        android:textColor="@color/teacherPortalTextHighlight"
         android:textSize="24sp" />
 
     <LinearLayout
@@ -109,7 +117,8 @@
             android:id="@+id/selectFileButton"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/transparent_button" />
 
         <TextView
             android:text="You have selected the file:"
@@ -125,8 +134,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/selectedFileText"
             android:layout_gravity="center_horizontal"
-            android:textColorLink="@color/studPortalTextHighlight"
-            android:textColor="@color/studPortalTextHighlight" />
+            android:textColorLink="@color/teacherPortalTextHighlight"
+            android:textColor="@color/teacherPortalTextHighlight" />
 
         <Button
             android:text="UPLOAD FILE"
@@ -136,19 +145,21 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/transparent_button" />
     </LinearLayout>
 
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/check_attendance_button"
+        app:srcCompat="@drawable/upload_attendance_button"
         android:id="@+id/teacherAttShortcutButton"
         android:layout_gravity="center_horizontal"
         android:scaleType="centerInside"
         android:background="@color/transparentBg"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
 </LinearLayout>

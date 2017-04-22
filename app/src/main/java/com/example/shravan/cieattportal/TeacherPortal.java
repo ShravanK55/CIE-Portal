@@ -51,7 +51,7 @@ public class TeacherPortal extends AppCompatActivity {
         logoutButton.setOnClickListener(new LogoutButtonListener());
 
         portalState = PortalState.HOME;
-        homeContainer.setBackgroundColor(getResources().getColor(R.color.highlightedBg));
+        homeContainer.setBackgroundColor(getResources().getColor(R.color.teacherHighlightedBg));
     }
 
     class HomeButtonListener implements View.OnClickListener {
@@ -108,7 +108,7 @@ public class TeacherPortal extends AppCompatActivity {
             UnhighlightButton();
 
             portalState = PortalState.HOME;
-            homeContainer.setBackgroundColor(getResources().getColor(R.color.highlightedBg));
+            homeContainer.setBackgroundColor(getResources().getColor(R.color.teacherHighlightedBg));
         }
     }
 
@@ -123,7 +123,7 @@ public class TeacherPortal extends AppCompatActivity {
             UnhighlightButton();
 
             portalState = PortalState.TESTS;
-            marksContainer.setBackgroundColor(getResources().getColor(R.color.highlightedBg));
+            marksContainer.setBackgroundColor(getResources().getColor(R.color.teacherHighlightedBg));
         }
     }
 
@@ -138,7 +138,7 @@ public class TeacherPortal extends AppCompatActivity {
             UnhighlightButton();
 
             portalState = PortalState.ATTENDANCE;
-            attendanceContainer.setBackgroundColor(getResources().getColor(R.color.highlightedBg));
+            attendanceContainer.setBackgroundColor(getResources().getColor(R.color.teacherHighlightedBg));
         }
     }
 
@@ -153,7 +153,7 @@ public class TeacherPortal extends AppCompatActivity {
             UnhighlightButton();
 
             portalState = PortalState.DETAILS;
-            studentDetailsContainer.setBackgroundColor(getResources().getColor(R.color.highlightedBg));
+            studentDetailsContainer.setBackgroundColor(getResources().getColor(R.color.teacherHighlightedBg));
         }
     }
 
@@ -168,7 +168,7 @@ public class TeacherPortal extends AppCompatActivity {
             UnhighlightButton();
 
             portalState = PortalState.SETTINGS;
-            settingsContainer.setBackgroundColor(getResources().getColor(R.color.highlightedBg));
+            settingsContainer.setBackgroundColor(getResources().getColor(R.color.teacherHighlightedBg));
         }
     }
 

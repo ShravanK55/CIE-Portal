@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/attendancePageLayout"
-    android:background="@drawable/trial_bg">
+    android:background="@drawable/student_bg">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -21,8 +21,8 @@
             android:fontFamily="sans-serif"
             android:textStyle="normal|bold"
             android:layout_gravity="center_horizontal"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp" />
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
     </FrameLayout>
 
     <LinearLayout

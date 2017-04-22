@@ -3,20 +3,28 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/teacherDetailsLayout"
-    android:background="@color/studentBackground"
+    android:background="@drawable/teacher_bg"
     android:weightSum="1">
 
-    <TextView
-        android:text="Update Student Details"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/teacherDetailsTitle"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/studPortalTextColor"
-        android:textSize="26sp"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal|bold"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/tDetailsTitleContainer"
+        android:background="#1Affffff">
+
+        <TextView
+            android:text="Update Student Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherDetailsTitle"
+            android:textColor="@color/studPortalTextColor"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+    </FrameLayout>
 
     <EditText
         android:layout_width="wrap_content"

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/testMarksLayout"
-    android:background="@drawable/trial_bg">
+    android:background="@drawable/student_bg">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -244,13 +244,14 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/check_attendance_button"
+        app:srcCompat="@drawable/check_attendance_button_1"
         android:id="@+id/checkAttShortcutButton"
         android:layout_gravity="center_horizontal"
         android:scaleType="centerInside"
         android:background="@color/transparentBg"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:alpha="0.75" />
 
 </LinearLayout>
