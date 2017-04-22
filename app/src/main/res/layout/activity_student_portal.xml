@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentPortalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shravan.cieattportal.StudentPortal"
+    android:orientation="vertical"
+    android:background="@color/studentBackground">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navToolbar"
+        android:background="@color/toolbarBackground">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/homeContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/home_icon_white"
+                android:id="@+id/homeButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:scaleType="centerInside" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/marksContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/marks_icon_white"
+                android:id="@+id/marksButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/attContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/att_icon_white"
+                android:id="@+id/attButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/settingsContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/settings_icon_white"
+                android:id="@+id/settingsButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/logoutContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logout_icon_white"
+                android:id="@+id/logoutButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentView">
+
+    </FrameLayout>
+
+</LinearLayout>

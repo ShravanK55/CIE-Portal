@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacherPortalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shravan.cieattportal.StudentPortal"
+    android:orientation="vertical"
+    android:background="@color/studentBackground">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherNavToolbar"
+        android:background="@color/toolbarBackground">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/teacherHomeContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/home_icon_white"
+                android:id="@+id/teacherHomeButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:scaleType="centerInside" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/teacherMarksContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/marks_icon_white"
+                android:id="@+id/teacherMarksButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/teacherAttContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/att_icon_white"
+                android:id="@+id/teacherAttButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/teacherDetailsContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/user_icon_white"
+                android:id="@+id/teacherDetailsButton"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:background="@color/transparentBg" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/teacherSettingsContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/settings_icon_white"
+                android:id="@+id/teacherSettingsButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/teacherLogoutContainer"
+            android:background="@color/transparentBg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logout_icon_white"
+                android:id="@+id/teacherLogoutButton"
+                android:background="@color/transparentBg"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/teacherContentView">
+
+    </FrameLayout>
+
+</LinearLayout>

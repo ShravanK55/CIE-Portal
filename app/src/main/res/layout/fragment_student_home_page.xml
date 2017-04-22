@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homePageLayout"
+    android:background="@color/studentBackground">
+
+    <TextView
+        android:text="CIE/SEE Student Portal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studPortalTitle"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/welcomeLayout"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="Welcome,"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcomeText"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/studPortalTextColor"
+            android:textSize="22sp" />
+
+        <TextView
+            android:text="Student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentNameText"
+            android:textSize="22sp"
+            android:textColor="@color/studPortalTextHighlight" />
+
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dotText"
+            android:textSize="22sp"
+            android:layout_marginLeft="1dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Your Details:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailsText"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/studPortalTextColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailsLayout"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detailKeyLayout"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:text="USN:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usnKeyText"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:textColor="@color/studPortalTextColor"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:text="Section:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sectionKeyText"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/studPortalTextColor"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:text="Branch:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/branchKeyText"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/studPortalTextColor"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detailValueLayout"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:text="1BM14CS001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usnValueText"
+                android:textSize="20sp"
+                android:textColor="@color/studPortalTextHighlight"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:text="B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sectionValueText"
+                android:textSize="20sp"
+                android:textColor="@color/studPortalTextHighlight"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:text="CSE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/branchValueText"
+                android:textSize="20sp"
+                android:textColor="@color/studPortalTextHighlight"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="To view your marks, attendance or to change your settings, click on the links below:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shortcutDescriptionText"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/test_marks_button"
+        android:id="@+id/testMarksShortcutButton"
+        android:cropToPadding="false"
+        android:background="@color/transparentBg"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/attendance_button"
+        android:id="@+id/attendanceShortcutButton"
+        android:cropToPadding="false"
+        android:background="@color/transparentBg"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/settings_button"
+        android:id="@+id/settingsShortcutButton"
+        android:cropToPadding="false"
+        android:background="@color/transparentBg"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/testMarksLayout"
+    android:background="@color/studentBackground">
+
+    <TextView
+        android:text="CIE Marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testMarksTitle"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/testsToolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/test_1_btn"
+            android:id="@+id/test1Button"
+            android:layout_weight="0.33"
+            android:background="@color/transparentBg"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/test_2_btn"
+            android:id="@+id/test2Button"
+            android:layout_weight="0.33"
+            android:background="@color/transparentBg"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/test_3_btn"
+            android:id="@+id/test3Button"
+            android:layout_weight="0.33"
+            android:background="@color/transparentBg"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Test 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testText"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/studPortalTextHighlight"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marksTableLayout"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/subjectKeyLayout"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:text="Subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subjectTitle"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/studPortalTextColor" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/subjectKeyContainer"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="MAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject1"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/studPortalTextColor" />
+
+                <TextView
+                    android:text="TFCS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextColor" />
+
+                <TextView
+                    android:text="OOMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextColor" />
+
+                <TextView
+                    android:text="AI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextColor" />
+
+                <TextView
+                    android:text="FLN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextColor" />
+
+                <TextView
+                    android:text="PMF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextColor" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/subjectMarksLayout"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:text="Marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/marksTitle"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/studPortalTextColor" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subjectMarksContainer"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/marks1"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/studPortalTextHighlight" />
+
+                <TextView
+                    android:text="40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/marks2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextHighlight" />
+
+                <TextView
+                    android:text="37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/marks3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextHighlight" />
+
+                <TextView
+                    android:text="22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/marks4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextHighlight" />
+
+                <TextView
+                    android:text="30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/marks5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextHighlight" />
+
+                <TextView
+                    android:text="39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/marks6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/studPortalTextHighlight" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/check_attendance_button"
+        android:id="@+id/checkAttShortcutButton"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:background="@color/transparentBg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+</LinearLayout>

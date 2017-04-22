@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/teacherHomePageLayout"
+    android:background="@color/studentBackground">
+
+    <TextView
+        android:text="CIE/SEE Teacher Portal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherPortalTitle"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/teacherWelcomeLayout"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="Welcome,"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherWelcomeText"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/studPortalTextColor"
+            android:textSize="22sp" />
+
+        <TextView
+            android:text="Teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherNameText"
+            android:textSize="22sp"
+            android:textColor="@color/studPortalTextHighlight" />
+
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherDotText"
+            android:textSize="22sp"
+            android:layout_marginLeft="1dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="To upload marks or attendance for your classes, click on the links below:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherShortcutDescriptionText"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/test_marks_button"
+        android:id="@+id/teacherTestMarksShortcutButton"
+        android:cropToPadding="false"
+        android:background="@color/transparentBg"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/attendance_button"
+        android:id="@+id/teacherAttendanceShortcutButton"
+        android:cropToPadding="false"
+        android:background="@color/transparentBg"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/settings_button"
+        android:id="@+id/teacherSettingsShortcutButton"
+        android:cropToPadding="false"
+        android:background="@color/transparentBg"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+</LinearLayout>

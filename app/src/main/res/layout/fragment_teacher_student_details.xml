@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/teacherDetailsLayout"
+    android:background="@color/studentBackground"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Update Student Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherDetailsTitle"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="14"
+        android:id="@+id/teacherIDEdit"
+        android:hint="Student ID"
+        android:fontFamily="sans-serif"
+        android:textSize="11sp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_edittext"
+        android:textColorHint="@color/passwordChangeColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="14"
+        android:id="@+id/teacherTest1Edit"
+        android:hint="Test 1 Marks"
+        android:fontFamily="sans-serif"
+        android:textSize="11sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_edittext"
+        android:textColorHint="@color/passwordChangeColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="14"
+        android:id="@+id/teacherTest2Edit"
+        android:hint="Test 2 Marks"
+        android:fontFamily="sans-serif"
+        android:textSize="11sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_edittext"
+        android:textColorHint="@color/passwordChangeColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="14"
+        android:id="@+id/teacherTest3Edit"
+        android:hint="Test 3 Marks"
+        android:fontFamily="sans-serif"
+        android:textSize="11sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_edittext"
+        android:textColorHint="@color/passwordChangeColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="14"
+        android:id="@+id/teacherAttendanceEdit"
+        android:hint="Attendance"
+        android:fontFamily="sans-serif"
+        android:textSize="11sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_edittext"
+        android:textColorHint="@color/passwordChangeColor" />
+
+    <Button
+        android:text="UPDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherUpdateDetailsButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_button"
+        android:layout_marginTop="25dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orText"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:text="UPLOAD CSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherUploadDetailsButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_button"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp" />
+
+</LinearLayout>

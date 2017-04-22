@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/attendancePageLayout"
+    android:background="@color/studentBackground">
+
+    <TextView
+        android:text="Attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendanceTitle"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subjectSelectLayout"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+
+        <TextView
+            android:text="Subject:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjectText"
+            android:layout_weight="0.6"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/studPortalTextColor" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjectSelectSpinner"
+            android:layout_weight="0.2"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:id="@+id/attendanceCalender"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="290dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/attStatsLayout"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/attKeyContainer"
+            android:layout_weight="0.4"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:text="Classes Attended:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attStateText"
+                android:layout_gravity="right"
+                android:textColor="@color/studPortalTextColor" />
+
+            <TextView
+                android:text="Classes Taken:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attTakenText"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:textColor="@color/studPortalTextColor" />
+
+            <TextView
+                android:text="Attendance Percentage:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attPercentText"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:textColor="@color/studPortalTextColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/attValueContainer"
+            android:layout_weight="0.6"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:text="85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attStateValue"
+                android:textColor="@color/studPortalTextHighlight" />
+
+            <TextView
+                android:text="100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attTakenValue"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/studPortalTextHighlight" />
+
+            <TextView
+                android:text="85%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attPercentValue"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/studPortalTextHighlight" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

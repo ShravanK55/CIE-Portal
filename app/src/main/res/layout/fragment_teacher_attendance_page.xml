@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/teacherAttendanceLayout"
+    android:background="@color/studentBackground">
+
+    <TextView
+        android:text="CIE Attendance Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherAttTitle"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/attSelectClassContainer"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:text="Class:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherAttClassText"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attClassSpinner"
+            android:layout_weight="0.8"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherAttText"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/studPortalTextHighlight"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadAttFileContainer"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:text="SELECT CSV FILE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectAttFileButton"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:text="You have selected the file:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attConfirmFileText"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:text="File.csv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedAttFileText"
+            android:layout_gravity="center_horizontal"
+            android:textColorLink="@color/studPortalTextHighlight"
+            android:textColor="@color/studPortalTextHighlight" />
+
+        <Button
+            android:text="UPLOAD FILE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherAttUploadButton"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settingsLayout"
+    android:background="@color/studentBackground"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsTItle"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/studPortalTextColor"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:text="Change Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changePasswordText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/studPortalTextColor"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="14"
+        android:id="@+id/oldPasswordEdit"
+        android:hint="Old Password"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_edittext"
+        android:textColorHint="@color/passwordChangeColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="14"
+        android:id="@+id/newPasswordEdit"
+        android:hint="New Password"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_edittext"
+        android:textColorHint="@color/passwordChangeColor" />
+
+    <Button
+        android:text="CHANGE PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/password_change_button"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp" />
+</LinearLayout>
