@@ -3,20 +3,28 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/settingsLayout"
-    android:background="@color/studentBackground"
+    android:background="@drawable/trial_bg"
     android:weightSum="1">
 
-    <TextView
-        android:text="Settings"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/settingsTItle"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/studPortalTextColor"
-        android:textSize="26sp"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal|bold"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/sSettingsTitleContainer"
+        android:background="#1Affffff">
+
+        <TextView
+            android:text="Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsTItle"
+            android:textColor="@color/studPortalTextColor"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+    </FrameLayout>
 
     <TextView
         android:text="Change Password"
@@ -26,7 +34,7 @@
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
         android:textColor="@color/studPortalTextColor"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:layout_width="wrap_content"

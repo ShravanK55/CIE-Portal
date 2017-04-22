@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/navToolbar"
-        android:background="@color/toolbarBackground">
+        android:background="@drawable/top_bar_bg">
 
         <FrameLayout
             android:layout_width="match_parent"

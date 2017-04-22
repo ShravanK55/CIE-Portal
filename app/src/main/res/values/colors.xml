@@ -8,7 +8,7 @@
     <color name="studentBackground">#151515</color>
     <color name="toolbarBackground">#0a0a0a</color>
     <color name="transparentBg">#00000000</color>
-    <color name="highlightedBg">#32ae9e</color>
+    <color name="highlightedBg">#af32ae9e</color>
     <color name="studPortalTextColor">#d7d7d7</color>
     <color name="studPortalTextHighlight">#3dd4c1</color>
     <color name="passwordChangeColor">#7e7e7e</color>

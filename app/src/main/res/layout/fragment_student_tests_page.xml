@@ -7,19 +7,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/testMarksLayout"
-    android:background="@color/studentBackground">
+    android:background="@drawable/trial_bg">
 
-    <TextView
-        android:text="CIE Marks"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/testMarksTitle"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/studPortalTextColor"
-        android:textSize="26sp"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal|bold"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/sTestsTitleContainer"
+        android:background="#1Affffff">
+
+        <TextView
+            android:text="CIE Marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/testMarksTitle"
+            android:textColor="@color/studPortalTextColor"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+    </FrameLayout>
 
     <LinearLayout
         android:orientation="horizontal"
